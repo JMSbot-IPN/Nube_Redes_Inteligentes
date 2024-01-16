@@ -1,0 +1,14 @@
+{% extends 'layout.html' %}
+
+{% block title %}Buscar{% endblock %}
+
+{% block content %}
+    <h1>Página de Búsqueda</h1>
+    <form action="/buscar_cliente" method="post">
+        <label for="imsi">IMSI:</label>
+        <input type="text" id="imsi" name="imsi" required><br>
+
+        <input type="submit" value="Enviar">
+    </form>
+    <!-- Contenido específico de la página de búsqueda -->
+{% endblock %}

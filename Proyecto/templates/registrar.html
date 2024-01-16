@@ -1,0 +1,15 @@
+{% extends 'layout.html' %}
+
+{% block title %}Registrar{% endblock %}
+
+{% block content %}
+        <h1>Formulario de Registro de Datos</h1>
+
+        <form action="/registrar_cliente" method="post">
+            <label for="imsi">IMSI:</label>
+            <input type="text" id="imsi" name="imsi" required><br>
+
+            <input type="submit" value="Enviar">
+        </form>
+
+{% endblock %}
